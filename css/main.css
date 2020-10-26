@@ -171,6 +171,11 @@ img.profile{
         margin-top: 0;
         grid-column: 1/4;
     }
+
+    /* about page */
+    .about-inner-wrapper{
+        grid-column: 1/3;
+    }
     
 }
 
