@@ -1,21 +1,21 @@
 .content{
     display: block;
 }
-.contact-wrapper{
+.contact-wrapper, .login-wrapper{
     margin: 0px 32px;
 }
 .contact-wrapper h3{
     text-align: center;
 }
 
-.contact-wrapper div{
+.contact-wrapper div, .login-wrapper div{
     width: 50%;
     margin: auto;
     border: 2px solid #A88A8A;
     padding: 32px;
     margin-top: 0px;
 }
-input[type=text], input[type=email]{
+.input-field{
     border: 2px solid #2D9CDB;
     width: 100%;
     height: 32px;
@@ -27,7 +27,7 @@ textarea{
     width: 100%;
 }
 
-input[type=submit]{
+#send-button, #login-button{
     display: block;
     margin: auto;
     width: 120px;
@@ -45,13 +45,6 @@ input[type=submit]{
     margin: auto;
     margin-top: 32px;
     margin-bottom: -20px;
-}
-
-#contact{
-    background-color: #CEFBFE;
-}
-#home{
-    background-color: #F7F6E7;
 }
 
 @media screen and (max-width: 760px){

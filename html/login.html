@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celestin Niyindaigiriye</title>
+    <title>Login | Celestin's Blog</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
     <link type="text/css" rel="stylesheet" href="../css/main.css">
-    <link type="text/css" rel="stylesheet" href="../css/about.css">
+    <link type="text/css" rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
     <div class="container">
@@ -17,9 +17,9 @@
                     
                 <a id="home" href="./index.html">Home</a>
                 <a id="blog" href="#">Blog</a>
-                <a id="about" href="#" style="background-color: #CEFBFE; color: 030230;">About</a>
-                <a id="contact" href="./contact.html">Contact</a>
-                <a id="login" href="#">Login</a>
+                <a id="about" href="#">About</a>
+                <a id="contact" href="#">Contact</a>
+                <a id="login" href="#" style="background-color: #CEFBFE; color: 030230;">Login</a>
                 <div class="menu-icon" onclick="changeMenu(this)">
                         <div></div>
                         <div></div>
@@ -27,40 +27,28 @@
                     </div>
             </nav>
         </header>
+
         <div class="content">
-            <h1>Meet Me</h1>
-            <div class="about-wrapper">
-                <div class="about-inner-wrapper">
-                    <img id="my-image" src="../assets/profile.jpeg" alt="Image">
-                </div>
-                <div class="about-inner-wrapper">
-
-                    <p>Celestin Niyindagiriye Mathematician, Web developer & designer </p>
-                    <p>I help companies and businesses to reflect their brand in global market.  Help individuals to make personal career marketing through social networking whith other people with shared interests .</p>
-                    <p id="calender"><img src="../assets/icons/calendar.png" alt="Birth date" > &nbsp; 6<sup>th</sup> &nbsp; April 1998</p>
-                    <a id="skype" href="" style="text-decoration: none;"><img src="../assets/icons/skype1.png" alt="Skype" > &nbsp; Let's talk</a>
-
-                    <h2>Proficiency</h2>
-
-                    <p>JavaScript 90%</p>
-                    <div class="skills-container">
-                        <div class="skills-javascript"></div>
+            <div class="contact-wrapper">
+                <img src="../assets/phone-call.png" alt="">
+                <h3>First time? <a href="">Sign Up</a></h3>
+                <p id="chat"><img class="iconify" src="../assets/icons/enter.png" alt=""></p>
+                <form action="">
+                    <div class="login">
+                        <p>
+                            <label for="name">Username or Email:</label><br>
+                            <input class="input-field" type="text" name="name">
+                        </p>
+                        <p>
+                            <label for="email">Password:</label><br>
+                            <input class="input-field" type="password" name="password">
+                        </p>
                     </div>
-                    <p>Python 85%</p>
-                    <div class="skills-container">
-                        <div class="skills-python"></div>
-                    </div>
-                    <p>Java 80%</p>
-                    <div class="skills-container">
-                        <div class="skills-java"></div>
-                    </div>
-                    <p>Statistics 83%</p>
-                    <div class="skills-container">
-                        <div class="skills-statistics"></div>
-                    </div>
-                </div>
+                    <input id="login-button" type="submit" value="Login">
+                </form>
             </div>
         </div>
+
         <footer>
             <div class="footer-wrapper">
                 <div class="footer-inner-wrapper about-footer">
