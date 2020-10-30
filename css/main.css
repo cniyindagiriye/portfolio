@@ -294,9 +294,14 @@ img.profile{
     color:#CEFBFE;
     padding-bottom: 32px;
 }
-.description h3{
+.description h3 a{
+    display: block;
     text-align: center;
     color: #DBFFEE;
+    text-decoration: none;
+}
+.description h3 a:hover{
+    text-decoration: underline;
 }
 
 .blog-posts-wrapper{
@@ -329,4 +334,39 @@ img.profile{
     padding: 12px;
     padding-bottom: 0px;
     height: fit-content;
+}
+
+.blog-footer form{
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+
+.blog-footer input[type=email]{
+    margin-right: 6px;
+    border: 1px solid #A9D69D;
+}
+.blog-footer input[type=submit]{
+    padding: 0px;
+    background-color: #A9D69D;
+    border: none;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+.contact-footer img{
+    padding-right: 6px;
+}
+
+.post-img img{
+    width: 100%; 
+    padding: 6px;
+}
+
+.offering img{
+    width: 100%;
+}
+
+#navigation .current{
+    background-color: #CEFBFE; 
+    color: #030230;
 }

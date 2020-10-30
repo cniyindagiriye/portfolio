@@ -119,7 +119,136 @@
     color: #130376;
 }
 
+.article-column{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.article-row{
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.article-row .blog-image{
+    width: 100%;
+}
+
+.article-row .blog-image img{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.article-row .article-features{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 6px;
+}
+
+.article-row .article-features > *{
+    display: flex;
+    text-decoration: none;
+    background-color: #c5c5c5;
+    padding: 3px;
+    border-radius: 5px;
+    width: fit-content;
+    color: black;
+}
+.article-row .article-features > *:hover{
+    border: 2px solid #c3c3c3;
+    background-color: rgb(255, 251, 245);
+    text-decoration: none;
+}
+
+.input-field{
+    border: 2px solid #2D9CDB;
+    width: 100%;
+    height: 32px;
+}
+
+textarea{
+    border: 2px solid #2D9CDB;
+    resize: none;
+    width: 100%;
+}
+
+.article-row form{
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.article-row .comment{
+    width: 50%;
+}
+
+.article-row h5{
+    margin-top: 32px;
+    margin-bottom: -12px;
+}
+
+
+
+form #add-button{
+    background-color: #0007A6;
+    color: #c5c5c5;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 6px;
+    margin-bottom: 22px;
+}
+
+.view-replies{
+    border: none;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.blog-content p:nth-child(3){
+    color: rgba(0, 0, 0, 0.411);
+}
+
+.user-comments{
+    margin: 32px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+.user-comments .user-comment{
+    padding-left: 6px;
+}
+.user-comment h5{
+    margin: 0;
+}
+.user-comment h5 #time{
+    color: #777777;
+}
+.user-comment .text{
+    margin-top: 3px;
+}
+
+.user-comment .options{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+}
+
+.options > *{
+    border: none;
+    display: flex;
+}
+.options > *:checked{
+    border: none;
+}
+
 @media screen and (max-width: 760px){
+    .article-row .comment{
+        width: 100%;
+    }
     .content{
         grid-gap: 0px;
     }
