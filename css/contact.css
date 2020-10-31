@@ -1,5 +1,6 @@
 .content{
     display: block;
+    padding: 5%;
 }
 .contact-wrapper, .login-wrapper{
     margin: 0px 32px;
